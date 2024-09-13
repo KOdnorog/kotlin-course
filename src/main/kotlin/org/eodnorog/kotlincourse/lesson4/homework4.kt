@@ -1,6 +1,6 @@
 package com.cathrino.org.eodnorog.kotlincourse.lesson4
 
-class homework4 {
+class Homework4 {
     val answerQuestionLife: Int = 42
     val number: Long = 98765432123456789L
     val float: Float = 23.45f
