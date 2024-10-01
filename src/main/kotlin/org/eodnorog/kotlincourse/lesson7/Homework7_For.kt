@@ -1,14 +1,14 @@
 package org.eodnorog.kotlincourse.lesson7
 
 fun main() {
-    //five()
-    //tenEven()
-    //reverseFive()
-    //reverseTenStep2()
-    //stepTwo()
-    //thirdFigure()
-    //untilNine()
-    //untilFifteen()
+    five()
+    tenEven()
+    reverseFive()
+    reverseTenStep2()
+    stepTwo()
+    thirdFigure()
+    untilNine()
+    untilFifteen()
 }
 
 //Задания для Цикла for

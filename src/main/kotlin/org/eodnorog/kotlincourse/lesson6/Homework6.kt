@@ -1,43 +1,43 @@
 package org.eodnorog.kotlincourse.lesson6
 
 fun main() {
-//    getMonth(1)
-//    getMonth(3)
-//    getMonth(8)
-//    getMonth(10)
-//    getMonth(12)
+    getMonth(1)
+    getMonth(3)
+    getMonth(8)
+    getMonth(10)
+    getMonth(12)
 
-//    getYearsDogs(1)
-//    getYearsDogs(2)
-//    getYearsDogs(3)
-//    getYearsDogs(7)
+    getYearsDogs(1)
+    getYearsDogs(2)
+    getYearsDogs(3)
+    getYearsDogs(7)
 
-//    typeTransport(10)
-//    typeTransport(2)
-//    typeTransport(1)
+    typeTransport(10)
+    typeTransport(2)
+    typeTransport(1)
 
-//    calculatBonuses(100)
-//    calculatBonuses(500)
-//    calculatBonuses(999)
-//    calculatBonuses(1000)
-//    calculatBonuses(1001)
-//    calculatBonuses(10000)
+    calculatBonuses(100)
+    calculatBonuses(500)
+    calculatBonuses(999)
+    calculatBonuses(1000)
+    calculatBonuses(1001)
+    calculatBonuses(10000)
 
-//    typeDoc(".doc")
-//    typeDoc(".kot")
+    typeDoc(".doc")
+    typeDoc(".kot")
 
-//    conversionTemperature(12, "F")
-//    conversionTemperature(123, "C")
-//    conversionTemperature(30, "yty")
+    conversionTemperature(12, "F")
+    conversionTemperature(123, "C")
+    conversionTemperature(30, "yty")
 
-//    selectionClothes(-5)
-//    selectionClothes(12)
-//    selectionClothes(24)
-//    selectionClothes(42)
+    selectionClothes(-5)
+    selectionClothes(12)
+    selectionClothes(24)
+    selectionClothes(42)
 
-//    chooseMovieForAge(5)
-//    chooseMovieForAge(12)
-//    chooseMovieForAge(27)
+    chooseMovieForAge(5)
+    chooseMovieForAge(12)
+    chooseMovieForAge(27)
 }
 
     //Задание 1: "Определение Сезона"

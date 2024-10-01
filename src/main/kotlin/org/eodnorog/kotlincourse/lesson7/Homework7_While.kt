@@ -1,10 +1,10 @@
 package org.eodnorog.kotlincourse.lesson7
 
 fun main() {
-    //fiveWhile()
-    //tenEvenWhile()
-    //reverseFiveWhile()
-    //repeatCount()
+    fiveWhile()
+    tenEvenWhile()
+    reverseFiveWhile()
+    repeatCount()
 
 }
 
