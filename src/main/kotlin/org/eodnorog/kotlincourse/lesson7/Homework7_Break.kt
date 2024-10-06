@@ -46,7 +46,7 @@ fun whileThree() {
     while (count < 10) {
         count++
         if (count % 3 == 0) continue
-    println(count)
+        println(count)
     }
 }
 
@@ -60,7 +60,7 @@ fun whileThree() {
 fun tableMultiplication() {
     for (i in 1..10) {
         for (a in 1..10) {
-            print(i*a)
+            print(i * a)
             print(" ")
         }
         println("")

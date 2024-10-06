@@ -13,7 +13,7 @@ class Homework4 {
     val floatTwo: Float = 18.0f
     val doubleMinus: Double = -0.001
     val intelligent: String = "OpenAI"
-    val charQuotes:  String = "true"
+    val charQuotes: String = "true"
     val nine: Char = '9'
     val game: Int = 2048
     val numberLong: Long = 10000000000L

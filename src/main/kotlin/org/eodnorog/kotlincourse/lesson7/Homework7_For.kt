@@ -24,13 +24,13 @@ fun five() {
 fun tenEven() {
     for (i in 1..10) {
         if (i % 2 == 0)
-        println(i)
+            println(i)
     }
 }
 
 //Обратный Диапазон:
 //- Создайте цикл for, который выводит числа от 5 до 1.
-fun reverseFive(){
+fun reverseFive() {
     for (i in 5 downTo 1) {
         println(i)
     }
@@ -55,7 +55,7 @@ fun stepTwo() {
 fun thirdFigure() {
     for (i in 1..20) {
         if (i % 3 == 0)
-    println(i)
+            println(i)
     }
 }
 

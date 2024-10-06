@@ -27,18 +27,13 @@ fun makePhrase(phrase: String): String {
     var newPhrase = phrase
     if (phrase.contains("невозможно")) {
         newPhrase = phrase.replace("невозможно", "совершенно точно возможно, просто требует времени")
-    }
-    else if (phrase.startsWith("Я не уверен")) {
+    } else if (phrase.startsWith("Я не уверен")) {
         newPhrase += ", но моя интуиция говорит об обратном"
-    }
-    else if (phrase.contains("катастрофа")) {
+    } else if (phrase.contains("катастрофа")) {
         newPhrase = phrase.replace("катастрофа", "интересное событие")
-    }
-    else if (phrase.endsWith("без проблем")) {
+    } else if (phrase.endsWith("без проблем")) {
         newPhrase = phrase.replace("без проблем", "с парой интересных вызовов на пути")
-    }
-
-    else if (phrase.contains(" ")) { //или здесь можно использовать phrase.split(" ").size == 1
+    } else if (phrase.contains(" ")) { //или здесь можно использовать phrase.split(" ").size == 1
         newPhrase = "Иногда, $phrase, но не всегда"
     }
 
@@ -79,7 +74,7 @@ fun task1HW8Example2(phrase: String) {
 //Описание: Дана строка с номером кредитной карты "4539 1488 0343 6467".
 //Замаскируйте все цифры, кроме последних четырех, символами "*".
 
-fun task2HW8 (phrase: String) {
+fun task2HW8(phrase: String) {
     val indexNumber = phrase.substring(0..14)
     val secure = phrase.replace(indexNumber, "**** **** **** ")
     println(secure)
@@ -89,9 +84,9 @@ fun task2HW8 (phrase: String) {
 //Описание: У вас есть электронный адрес "username@example.com".
 //Преобразуйте его в строку "username [at] example [dot] com"
 
-fun task3HW8 (phrase: String) {
+fun task3HW8(phrase: String) {
     val prestoString = phrase.replace("@", " [at] ")
-    .replace(".", " [dot] ")
+        .replace(".", " [dot] ")
     println(prestoString)
 }
 
@@ -99,7 +94,7 @@ fun task3HW8 (phrase: String) {
 //Описание: Дан путь к файлу "C:/Пользователи/Документы/report.txt".
 //Извлеките название файла с расширением
 
-fun task4HW8 (phrase: String) {
+fun task4HW8(phrase: String) {
     val nameFile = phrase.split("/")
     val onlyNameAndFormate = nameFile[3]
     println(onlyNameAndFormate)
@@ -111,12 +106,12 @@ fun task4HW8 (phrase: String) {
 //Описание: У вас есть фраза, например "Объектно-ориентированное программирование".
 //Создайте аббревиатуру из начальных букв слов (например, "ООП")
 
-fun task5HW8 (phrase: String) {
+fun task5HW8(phrase: String) {
     val dividePhrase = phrase.split("-", " ")
     println(dividePhrase)
     var abbreviation = ""
     for (letter in dividePhrase) {
-            abbreviation += letter[0].uppercase()
-        }
+        abbreviation += letter[0].uppercase()
+    }
     println(abbreviation)
 }

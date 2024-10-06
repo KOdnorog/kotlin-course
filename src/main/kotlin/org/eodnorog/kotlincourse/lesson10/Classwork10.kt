@@ -23,7 +23,7 @@ fun main() {
         println("|$letter|")
     }
 
-    val list = listOf(32, 53 ,1 , -76)
+    val list = listOf(32, 53, 1, -76)
     for (index in list.indices) {
         if (index == list.lastIndex) {
             println(list[index] + list[0])

@@ -2,7 +2,7 @@ package org.eodnorog.kotlincourse.lesson10
 
 fun main() {
 
-
+//------ Работа с массивами Array ------
 //Задание 1: Создание и Инициализация Массива
 //Создайте массив из 5 целых чисел и инициализируйте его значениями от 1 до 5.
     val taskHome1Array: Array<Int> = arrayOf(1, 2, 3, 4, 5)

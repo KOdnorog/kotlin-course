@@ -21,7 +21,7 @@ fun main() {
 
     val originalString = "Сабстринг, котлин это весело, говорили они"
     val subString4 = originalString.substring(11)
-    val subString2 = originalString.substring(11,17)
+    val subString2 = originalString.substring(11, 17)
     val replacedString = originalString.replace("о", "FuN")
     val words = originalString.split("о")
     //println(words.joinToString ( "\n" ))

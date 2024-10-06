@@ -16,12 +16,12 @@ class Homework3 {
     //Количество участников
     var members: Int = 0
         get() = field
-        private set(value){
+        private set(value) {
             field = value
         }
 
     //Длительность хакатона
-    var durationEvent: Long = 8*60*60
+    var durationEvent: Long = 8 * 60 * 60
 
     //Контактная информация и условия соглашений с поставщиками пищи, оборудования и других услуг
     private lateinit var contactsInformation: String
