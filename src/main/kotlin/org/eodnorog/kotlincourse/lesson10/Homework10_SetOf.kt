@@ -42,29 +42,59 @@ fun main() {
     println(" ")
     val taskHome6Set = mutableSetOf(1991, 1992, 1993, 1994, 1995, 1996, 1997)
     for (i in taskHome6Set)
-    println(i)
+        println(i)
     println("")
     println("--- **** - ** ---")
 
 //Задание 7: Проверка Наличия Элемента в Множестве
 //Создай функцию, которая принимает множество строк (set) и строку и проверяет, есть ли в множестве указанная строка.
 //Нужно вернуть булево значение true если строка есть. Реши задачу через цикл.
-
-
+    println(" ")
+    println("Task # 7: ${taskHome7Set(setOf("4", "7", "6", "6", "9", "35", "23", "8"), "4")}")
+    println(" ")
 
 //Задание 8: Объединение Двух Множеств
 //Создайте два множества строк и объедините их в одно новое множество, содержащее все уникальные элементы обоих множеств. Реши задачу с помощью циклов.
+    val taskHome8SetA = setOf("Kotest", "iOS", "True", "Android", "False")
+    val taskHome8SetB = setOf("Yapp", "True", "False", "Hippo")
+    val taskHome8SetC = mutableSetOf<String>()
+    for (i in taskHome8SetA) {
+        taskHome8SetC.add(i)
+    }
+    for (i in taskHome8SetB) {
+        taskHome8SetC.add(i)
+    }
+    println("Task # 8: $taskHome8SetC")
 
 
 //Задание 9: Нахождение Пересечения Множеств
 //Создайте два множества целых чисел и найдите их пересечение (общие элементы). Реши задачу через вложенные циклы.
-
+    val taskHome9SetA = setOf(3, 4, 13, 17, 27, 14)
+    val taskHome9SetB = setOf(2, 4, 22, 3, 12, 44, 17)
+    val taskHome9SetC = mutableSetOf<Int>()
+    for (i in taskHome9SetA) {
+        for (a in taskHome9SetB)
+            if (i == a) {
+                taskHome9SetC.add(i)
+            }
+    }
+    println("Task # 9: $taskHome9SetC")
 
 //Задание 10: Нахождение Разности Множеств
-//Создайте два множества строк и найдите разность первого множества относительно второго (элементы, присутствующие в первом множестве, но отсутствующие во втором). Реши задачу через вложенные циклы и переменные флаги.
+//Создайте два множества строк и найдите разность первого множества относительно второго (элементы, присутствующие в первом множестве, но отсутствующие во втором).
+//Реши задачу через вложенные циклы и переменные флаги.
 
 
 //Задание 11: Конвертация Множества в Список
 //Создайте множество строк и конвертируйте его в список с использованием цикла.
 
+}
+
+fun taskHome7Set(set: Set<String>, searchString: String): Boolean {
+    for (i in set) {
+        if (i.contains(searchString)) {
+            return true
+        }
+    }
+    return false
 }
