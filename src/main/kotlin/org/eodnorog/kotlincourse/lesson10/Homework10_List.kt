@@ -45,6 +45,8 @@ fun main() {
     for (i in taskHome6List) {
         println(i)
     }
+    println("")
+    println("--- **** - ** ---")
 
 //Задание 7: Получение Элементов Списка по Индексу
 //Создайте список строк и получите из него второй элемент, используя его индекс.
@@ -83,20 +85,36 @@ fun main() {
     println(" ")
     println("--- Task - 10 ---")
     println(" ")
-    val taskHome10List = mutableListOf(71,72,54,57)
-    var maxElement: Int
-    var minElement: Int
-    for(i in taskHome10List){
-        if (taskHome10List[1] < taskHome10List[2]) {
-            taskHome10List.add(taskHome10List[2])
+    val taskHome10List = mutableListOf(87, 72, 57, 0, 12, 11, -11)
+    var i = 0
+    var a = 0
+    var maxElement = taskHome10List[0]
+    var minElement = taskHome10List[0]
+    while (i < taskHome10List.size) {
+        if (taskHome10List[i] > maxElement) {
+            maxElement = taskHome10List[i]
         }
+        i++
     }
+    while (a < taskHome10List.size) {
+        if (taskHome10List[a] < minElement) {
+            minElement = taskHome10List[a]
+        }
+        a++
+    }
+    println("максимальный элемент: $maxElement")
+    println("минимальный элемент: $minElement")
+    println("")
+    println("--- **** - ** ---")
 
 //Задание 11: Фильтрация Списка
 //Имея список целых чисел, создайте новый список, содержащий только четные числа из исходного списка используя цикл.
     println(" ")
-    println("--- Task - 11 ---")
-    println(" ")
-//    val taskHome11List
-
+    val taskHome11List = mutableListOf(1, 2, 3, 4, 9, 6, 8, 8, 7, 0)
+    val newTaskHome11List = mutableListOf<Int>()
+    for (i in taskHome11List) {
+        if (i % 2 == 0 && i != 0)
+            newTaskHome11List.add(i)
+    }
+    println("Task # 11: $newTaskHome11List")
 }
