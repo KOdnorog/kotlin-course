@@ -41,8 +41,9 @@ fun main() {
     println("--- Task - 6 ---")
     println(" ")
     val taskHome6Set = mutableSetOf(1991, 1992, 1993, 1994, 1995, 1996, 1997)
-    for (i in taskHome6Set)
+    for (i in taskHome6Set) {
         println(i)
+    }
     println("")
     println("--- **** - ** ---")
 
@@ -65,6 +66,7 @@ fun main() {
         taskHome8SetC.add(i)
     }
     println("Task # 8: $taskHome8SetC")
+    println(" ")
 
 
 //Задание 9: Нахождение Пересечения Множеств
@@ -79,15 +81,34 @@ fun main() {
             }
     }
     println("Task # 9: $taskHome9SetC")
+    println(" ")
 
 //Задание 10: Нахождение Разности Множеств
 //Создайте два множества строк и найдите разность первого множества относительно второго (элементы, присутствующие в первом множестве, но отсутствующие во втором).
 //Реши задачу через вложенные циклы и переменные флаги.
+    val taskHome10SetA = setOf("Joey", "doesn't", "share", "food", "roblox")
+    val taskHome10SetB = setOf("I", "99", "doesn't", "food", "am")
+    val taskHome10SetC = mutableSetOf<String>()
+    for (i in taskHome10SetA) {
+        for (a in taskHome10SetB)
+            if (i != a) {
+                taskHome10SetC.add(i)
+                taskHome10SetC.remove(a)
+            }
+    }
+    println("Task # 10: $taskHome10SetC")
+    println(" ")
 
 
 //Задание 11: Конвертация Множества в Список
 //Создайте множество строк и конвертируйте его в список с использованием цикла.
-
+    val taskHome11Set = mutableSetOf(1991, 1992, 1993, 1994, 1995, 1996, 1997)
+    val newTaskHome11Set = mutableListOf<Int>()
+    for (i in taskHome11Set) {
+        newTaskHome11Set.add(i)
+    }
+    println("Task # 11: $newTaskHome11Set")
+    println(" ")
 }
 
 fun taskHome7Set(set: Set<String>, searchString: String): Boolean {
