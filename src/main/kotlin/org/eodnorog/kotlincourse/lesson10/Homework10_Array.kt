@@ -5,14 +5,19 @@ fun main() {
 //------ Работа с массивами Array ------
 //Задание 1: Создание и Инициализация Массива
 //Создайте массив из 5 целых чисел и инициализируйте его значениями от 1 до 5.
+    println(" ")
     val taskHome1Array: Array<Int> = arrayOf(1, 2, 3, 4, 5)
+    println("Task # 1: ${taskHome1Array.toList()}")
 
 //Задание 2: Создание Пустого Массива
 //Создайте пустой массив строк размером 10 элементов.
+    println(" ")
     val taskHome2Array: Array<Int?> = arrayOfNulls(10)
+    println("Task # 2: ${taskHome2Array.toList()}")
 
 //Задание 3: Заполнение Массива в Цикле
 //Создайте массив из 5 элементов типа Double и заполните его значениями, являющимися удвоенным индексом элемента.
+    println(" ")
     println("--- Task - 3 ---")
     println(" ")
     val taskHome3Array: Array<Double> = Array(5) { 0.0 }
