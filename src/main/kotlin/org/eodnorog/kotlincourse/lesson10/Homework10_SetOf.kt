@@ -90,6 +90,7 @@ fun main() {
     val taskHome10SetB = setOf("I", "99", "doesn't", "food", "am")
     val taskHome10SetC = mutableSetOf<String>()
     for (i in taskHome10SetA) {
+        var boolean: Boolean = false
         for (a in taskHome10SetB)
             if (i != a) {
                 taskHome10SetC.add(i)

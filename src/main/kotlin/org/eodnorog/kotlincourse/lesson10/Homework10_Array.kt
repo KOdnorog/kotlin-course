@@ -12,7 +12,7 @@ fun main() {
 //Задание 2: Создание Пустого Массива
 //Создайте пустой массив строк размером 10 элементов.
     println(" ")
-    val taskHome2Array: Array<Int?> = arrayOfNulls(10)
+    val taskHome2Array: Array<String> = Array(10) {"o"}
     println("Task # 2: ${taskHome2Array.toList()}")
 
 //Задание 3: Заполнение Массива в Цикле
@@ -42,7 +42,7 @@ fun main() {
     println(" ")
     println("--- Task - 5 ---")
     println(" ")
-    val taskHome5Array: Array<String?> = arrayOfNulls(3)
+    val taskHome5Array: Array<String?> = arrayOf(null,"dhfb","hf")
     println(taskHome5Array.toList())
 
 //Задание 6: Копирование Массива
@@ -51,10 +51,11 @@ fun main() {
     println("--- Task - 6 ---")
     println(" ")
     val taskHome6Array: Array<Int> = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
-    for (i in taskHome6Array) {
-        val newArray = setOf(i)
-        println(newArray)
+    val newArray = Array<Int>(9){0}
+    for (i in taskHome6Array.indices) {
+        newArray[i] = taskHome6Array[i]
     }
+    println(newArray.toList())
 
 //Задание 7: Разница Двух Массивов
 //Создайте два массива целых чисел одинаковой длины. Создайте третий массив, вычев значения одного из другого.
@@ -66,8 +67,8 @@ fun main() {
     val newTaskHome7ArrayC = Array(9) { 0 }
     for (i in newTaskHome7ArrayC.indices) {
         newTaskHome7ArrayC[i] = taskHome7ArrayA[i] - taskHome7ArrayB[i]
-        println(newTaskHome7ArrayC[i])
     }
+    println(newTaskHome7ArrayC.toList())
 
 //Задание 8: Поиск Индекса Элемента
 //Создайте массив целых чисел. Найдите индекс элемента со значением 5.
@@ -75,15 +76,18 @@ fun main() {
     println(" ")
     println("--- Task - 8 ---")
     println(" ")
-    val taskHome8Array = arrayOf(1, 2, 3, 4, 9, 6, 8, 8, 7, 0) //узнать как выводить все индексы "5"
+    val taskHome8Array = arrayOf(1, 2, 3, 5, 9, 6, 8, 5, 7, 0) //узнать как выводить все индексы "5"
     var count = 0
-    while (count++ < 10) {
-        if (5 in taskHome8Array) {
-            println(taskHome8Array.indexOf(5))
+    var result = -1
+    while (count < taskHome8Array.size) {
+        if(taskHome8Array[count] == 5){
+            result = count
             break
-        } else println(-1)
-        break
+        }
+        count++
     }
+    println(result)
+
 
 //Задание 9: Перебор Массива
 //Создайте массив целых чисел. Используйте цикл для перебора массива и вывода каждого элемента в консоль.
