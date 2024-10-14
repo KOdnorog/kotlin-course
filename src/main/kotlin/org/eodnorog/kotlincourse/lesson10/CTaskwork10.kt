@@ -54,8 +54,12 @@ fun main() {
 
 //    findNumber(1,5)
 
-    val set1 = setOf(1,2,3) //коллекция уникальных значений, если использовать дубликаты то нужно использовать listOf и у set нет индексов
-    val set2 = setOf(3,4,5,6,7)
+    val set1 = setOf(
+        1,
+        2,
+        3
+    ) //коллекция уникальных значений, если использовать дубликаты то нужно использовать listOf и у set нет индексов
+    val set2 = setOf(3, 4, 5, 6, 7)
     var emptySet = mutableSetOf<Int>()
 
     for (elem in set1) {

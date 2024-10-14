@@ -12,7 +12,7 @@ fun main() {
 //Задание 2: Создание Пустого Массива
 //Создайте пустой массив строк размером 10 элементов.
     println(" ")
-    val taskHome2Array: Array<String> = Array(10) {"o"}
+    val taskHome2Array: Array<String> = Array(10) { "o" }
     println("Task # 2: ${taskHome2Array.toList()}")
 
 //Задание 3: Заполнение Массива в Цикле
@@ -42,7 +42,7 @@ fun main() {
     println(" ")
     println("--- Task - 5 ---")
     println(" ")
-    val taskHome5Array: Array<String?> = arrayOf(null,"dhfb","hf")
+    val taskHome5Array: Array<String?> = arrayOf(null, "dhfb", "hf")
     println(taskHome5Array.toList())
 
 //Задание 6: Копирование Массива
@@ -51,7 +51,7 @@ fun main() {
     println("--- Task - 6 ---")
     println(" ")
     val taskHome6Array: Array<Int> = arrayOf(1, 2, 3, 4, 5, 6, 7, 8, 9)
-    val newArray = Array<Int>(9){0}
+    val newArray = Array<Int>(9) { 0 }
     for (i in taskHome6Array.indices) {
         newArray[i] = taskHome6Array[i]
     }
@@ -80,7 +80,7 @@ fun main() {
     var count = 0
     var result = -1
     while (count < taskHome8Array.size) {
-        if(taskHome8Array[count] == 5){
+        if (taskHome8Array[count] == 5) {
             result = count
             break
         }

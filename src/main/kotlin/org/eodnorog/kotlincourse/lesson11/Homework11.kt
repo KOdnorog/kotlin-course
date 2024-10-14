@@ -60,15 +60,15 @@ fun main() {
 
 //Задание 10: Словарь с Сложными Типами
 //Создайте словарь, где ключами являются строки, а значениями - списки целых чисел. Добавьте несколько элементов в этот словарь.
-    val task10 = mutableMapOf<String,List<Int>>()
-    task10["Hello"] = listOf(55,555,55555)
-    task10["World"] = listOf(12,12121212,12121212)
+    val task10 = mutableMapOf<String, List<Int>>()
+    task10["Hello"] = listOf(55, 555, 55555)
+    task10["World"] = listOf(12, 12121212, 12121212)
     println("task10: $task10")
 
 //Задание 11: Использование Множества в Качестве Значения
 //Создай словарь, в котором ключи - это целые числа, а значения - изменяемые множества строк. Добавь данные в словарь.
 //Получи значение по ключу (это должно быть множество строк) и добавь в это множество ещё строку. Распечатай полученное множество.
-    val task11 = mutableMapOf<Int,MutableSet<String>>()
+    val task11 = mutableMapOf<Int, MutableSet<String>>()
     task11[1] = mutableSetOf("привет", "мир", "Kotlin")
     task11[2] = mutableSetOf("еще", "раз", "Java")
     println(task11[1])
@@ -79,12 +79,12 @@ fun main() {
 //Создай словарь, где ключами будут пары чисел.
 //Через перебор найди значение у которого пара будет содержать цифру 5 в качестве первого или второго значения.
     val task12 = mutableSetOf(
-        Pair(4,5) to "ABC",
-        Pair(5,55) to "DFG",
-        Pair(64,65) to "JKL",
-        Pair(84,5) to "EKM"
+        Pair(4, 5) to "ABC",
+        Pair(5, 55) to "DFG",
+        Pair(64, 65) to "JKL",
+        Pair(84, 5) to "EKM"
     )
-    for ((i,a) in task12) {
+    for ((i, a) in task12) {
         if (i.first == 5 || i.second == 5) {
             println("task12: НАШЛИ УРААА $i : $a")
         }
