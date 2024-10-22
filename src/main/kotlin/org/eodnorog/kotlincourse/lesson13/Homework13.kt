@@ -21,8 +21,8 @@ fun main() {
 
     //1. Отфильтровать коллекцию по диапазону 18-30
     val listNext = listOf(86, 23, 42, 56, 1, 18, 11)
-    val task2One = listNext.filter { it in 18..30 }
-    println(task2One)
+    val taskOne = listNext.filter { it in 18..30 }
+    println(taskOne)
 
     //2. Выбрать числа, которые не делятся на 2 и 3 одновременно
     val taskTwo =
@@ -36,14 +36,15 @@ fun main() {
 
     //4. Преобразовать текстовую коллекцию в коллекцию длин слов
     val listText = listOf(
-        "а",
-        "",
+        "пустяк",
+        "hello",
         "месяц",
         "невзгоды",
         "пусть",
         "коллекция",
         "список",
-        "сто"
+        "сто",
+        "коллекция", "сто"
     )
     val taskFour = listText.map { it.length }
     println(taskFour)
@@ -63,17 +64,30 @@ fun main() {
     println(taskFive)
 
     //6. Отсортировать список в алфавитном порядке
+    val taskSix = listMapa.sorted()
+    println(taskSix)
 
     //7. Отсортировать список по убыванию
+    val taskSeven = listNext.sortedDescending()
+    println(taskSeven)
 
     //8. Распечатать квадраты элементов списка
+    val taskEight = listNext.associate { it to it * it }
+    println(taskEight)
 
     //9. Группировать список по первой букве слов
+    val taskNine = listText.groupBy { it.first() }
+    println(taskNine)
 
     //10. Очистить список от дублей
+    val taskTen = listText.distinct()
+    println(taskTen)
 
     //11. Взять первые 3 элемента списка
+    val taskEleven = listText.take(3)
+    println(taskEleven)
 
     //12. Взять последние 3 элемента списка
-
+    val taskTwelve = listText.takeLast(3)
+    println(taskTwelve)
 }
