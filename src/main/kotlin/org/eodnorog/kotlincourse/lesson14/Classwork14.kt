@@ -29,4 +29,47 @@ fun main() {
     val fruitsWithPineapple = fruitsPrices + ("pineapple" to 6.99)
     val mutableFruits = fruitsPrices.toMutableMap()
 
+    //Добавление элемента
+    mutableFruits["kiwi"] = 2.75
+    mutableFruits.putAll(mapOf("lime" to 1.1, "avocado" to 1.9))
+    //Удаление элемента
+    mutableFruits.remove("apple")
+    mutableFruits.clear()
+
+    //Разнообразные проверки
+    val containsApple = fruitsPrices.containsKey("apple")
+    val containsValue1_5 = fruitsPrices.containsValue(1.5)
+    val isEmpty = fruitsPrices.isEmpty()
+    val isNotEmpty = fruitsPrices.isNotEmpty()
+    val areAllFruitsExpensive = fruitsPrices.all { it.value > 1.0 } //возвращает булевое значение, все (логическое и &&)
+    val isAnyFruitCheap = fruitsPrices.any { it.value < 1.0 }  //возвращает булевое значение, все (логическое или ||)
+
+    val filteredByPrice = fruitsPrices.filter { it.key.contains("a") && it.value > 1.0 } //фильтрация словаря
+    val filteredByKeys =
+        fruitsPrices.filterKeys { it.startsWith("a") } //фильтрация по ключам, но будет создан новый словарь ключи и значение
+    val filteredByValue = fruitsPrices.filterValues { it < 2.0 } //фильтрация словаря по значение
+    val filteredNotApple = fruitsPrices.filterNot { it.key == "apple" }
+    val countExpensiveFruits = fruitsPrices.count { it.value > 1.5 }
+
+    //Преобразование
+    val increasedPrices = fruitsPrices.mapValues { it.value * 1.0 }
+    val fruitNamesUppercase = fruitsPrices.mapKeys { it.key.uppercase() }
+    val fruitsList = fruitsPrices.map { "${it.key} cost ${it.value}" }
+
+    val toMap = mutableFruits.toMap()
+    val toMutableMap = mutableFruits.toMutableMap()
+
+    //Деструктуризация
+    fruitsPrices.forEach { (fruit, price) ->
+        println("$fruit cost $price")
+    }
+    fruitsPrices.forEach {
+        println("${it.key} cost ${it.value}")
+    }
+}
+
+fun classWork() {
+    val map = mapOf<String, Int>()
+    for (entry in map.entries)
+        println("")
 }
