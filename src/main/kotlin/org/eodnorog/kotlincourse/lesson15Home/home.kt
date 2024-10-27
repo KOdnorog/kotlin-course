@@ -4,6 +4,6 @@ fun main() {
     val meet = Party("Sutyin, Firty str., 17 - 53", 13)
     meet.details()
 
-    val emo = Emotion("Sad", 2)
+    val emo = Emotion("грустно", 32)
     emo.express()
 }
