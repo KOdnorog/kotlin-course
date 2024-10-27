@@ -6,4 +6,11 @@ fun main() {
 
     val emo = Emotion("грустно", 32)
     emo.express()
+
+    val moon = Moon(true, "waning crescent")
+    moon.showPhase()
+
+    val concert = Concert("ИзПодНоги100500", "Литейный завод", 100500.55, 42, 42)
+    concert.infoAboutConcert()
+    concert.buyTickets()
 }
