@@ -1,5 +1,7 @@
 package org.eodnorog.kotlincourse.lesson15
 
+//ООП Классы
+
 fun main() {
     val person = Person("John", 30)
     person.sayHello()
