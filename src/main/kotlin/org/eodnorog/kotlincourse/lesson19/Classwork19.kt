@@ -17,3 +17,27 @@ fun main() {
     val student = Student("Ivan", 19, 3434)
 
 }
+
+class Atm(private var balance: Float = 0.0f) {
+    private var pin = "2333"
+
+    fun deposit(amount: Float, pin: String) {
+        checkPin(pin)
+    }
+
+    fun withdraw(amount: Float, pin: String): Float {
+        checkPin(pin)
+        return amount // != balance
+    }
+
+    fun getBalance(pin: String): Float {
+
+        checkPin(pin)
+        return balance
+    }
+
+    private fun checkPin(pin: String) {
+        if (pin != this.pin)
+            throw Exception("Pin not correct")
+    }
+}

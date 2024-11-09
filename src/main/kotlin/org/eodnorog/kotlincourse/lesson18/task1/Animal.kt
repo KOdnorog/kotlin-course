@@ -1,4 +1,4 @@
-package org.eodnorog.kotlincourse.lesson17.task1
+package org.eodnorog.kotlincourse.lesson18.task1
 
 class Animal(
     val maxWeight: Int,
