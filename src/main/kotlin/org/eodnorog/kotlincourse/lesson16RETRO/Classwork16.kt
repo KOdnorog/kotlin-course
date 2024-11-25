@@ -1,4 +1,4 @@
-package org.eodnorog.kotlincourse.lesson16
+package org.eodnorog.kotlincourse.lesson16RETRO
 
 open class Vehicle(
     val maxWeight: Int,
