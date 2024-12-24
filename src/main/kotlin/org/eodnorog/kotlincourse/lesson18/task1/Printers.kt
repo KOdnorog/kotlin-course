@@ -39,13 +39,13 @@ class InkJet : Printer("InkJet") {
 
     override fun printText(text: String) {
         val words = text.split(" ")
-        var colorIndex = 0 //добавляем инкримент
+        var colorIndex = 0
 
         for (text in words) {
             val colorText = colorPair[colorIndex].first
             val colorsBack = colorPair[colorIndex].second
             processText(text, colorText, colorsBack)
-            colorIndex++
+            colorIndex++ //добавляем инкримент
             if (colorIndex >= colorPair.size) {
                 colorIndex = 0
             }
@@ -53,7 +53,7 @@ class InkJet : Printer("InkJet") {
     }
 }
 
-fun main(){
+fun main() {
     Laser().printText("jxhfbvsldfuhvbfsouvfouvbvshfbvuohrbgoqugbfqougahbfvoauerbfo fkjvndfihfdfnvisrhgisrbg sergjrebgirebg ergierbgiebg erguerbv jsrbv")
     InkJet().printText("как дела или еще прикольно как тут может быть а тут не понятно он каждую пару будет отдельно  смотреть")
 }
