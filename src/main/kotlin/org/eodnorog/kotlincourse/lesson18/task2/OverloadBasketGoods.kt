@@ -25,7 +25,7 @@ class ShoppingCart() {
 
     override fun toString(): String {
         var result = "Итого в корзине: \n"
-        var totalItem = 0
+        var totalItem = item.keys.size //количество наименований
         var totalQuantity = 0
 
         for ((itemId, quantity) in item) {

@@ -1,10 +1,14 @@
 package org.eodnorog.kotlincourse.lesson19
 
+private const val CONST = "const"
+
 open class Person(private val name: String, protected val age: Int) {
 
     // Публичный метод
-    fun greet() {
+    protected fun greet(): MyClass {
         println("Привет, меня зовут $name.")
+        val m = MyClass()
+        return m
     }
 
     // Защищённый метод
@@ -14,6 +18,9 @@ open class Person(private val name: String, protected val age: Int) {
 
     // Приватный метод
     private fun secret() {
+        CONST
         println("Это секретный метод.")
     }
+
+    protected class MyClass
 }
